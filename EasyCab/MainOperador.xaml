@@ -1,0 +1,14 @@
+﻿<Window x:Class="EasyCab.MainOperador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainOperador" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="19" Margin="10,10,0,0" VerticalAlignment="Top" Width="63" x:Name="mainMenu">
+            <MenuItem Header="Servicio">
+                <MenuItem Header="Carreras" x:Name="menuCarreras" Click="menuCarreras_Click"></MenuItem>
+                <MenuItem Header="Ubicacion" x:Name="menuUbicacion" Click="menuUbicacion_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Image HorizontalAlignment="Left" Height="225" Margin="10,34,0,0" VerticalAlignment="Top" Width="272" Source="Imagenes/easy-cab-logo.png"/>
+    </Grid>
+</Window>

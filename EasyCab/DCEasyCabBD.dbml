@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyCabBD.mdf" Class="DCEasyCabBDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Database\EasyCabBD.mdf;Initial Catalog=EasyCabBD.mdf;Integrated Security=True" SettingsObjectName="EasyCab.Properties.Settings" SettingsPropertyName="EasyCabBD_mdfConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cliente" Member="Cliente">
+    <Type Name="Cliente">
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Cliente_Servicio" Member="Servicio" ThisKey="IdCliente" OtherKey="IdCliente" Type="Servicio" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Conductor" Member="Conductor">
+    <Type Name="Conductor">
+      <Column Name="IdConductor" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Paterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Materno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Celular" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha_Nac" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Foto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_Exp" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Procedencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Comision" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Conductor_Servicio" Member="Servicio" ThisKey="IdConductor" OtherKey="IdConductor" Type="Servicio" />
+      <Association Name="Conductor_Ubicacion" Member="Ubicacion" ThisKey="IdConductor" OtherKey="IdConductor" Type="Ubicacion" />
+      <Association Name="Conductor_Vehiculo" Member="Vehiculo" ThisKey="IdConductor" OtherKey="IdConductor" Type="Vehiculo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dueño" Member="Dueño">
+    <Type Name="Dueño">
+      <Column Name="IdDueño" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Paterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Materno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Dueño_Vehiculo" Member="Vehiculo" ThisKey="IdDueño" OtherKey="IdDueño" Type="Vehiculo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Empresa" Member="Empresa">
+    <Type Name="Empresa">
+      <Column Name="IdEmpresa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodParada" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NIT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodATT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Frecuencia" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Empresa_Sucursal" Member="Sucursal" ThisKey="IdEmpresa" OtherKey="IdEmpresa" Type="Sucursal" />
+      <Association Name="Usuario_Empresa" Member="Usuario" ThisKey="IdUsuario" OtherKey="IdUsuario" Type="Usuario" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Perfil" Member="Perfil">
+    <Type Name="Perfil">
+      <Column Name="IdPerfil" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Perfil_Usuario" Member="Usuario" ThisKey="IdPerfil" OtherKey="IdPerfil" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Servicio" Member="Servicio">
+    <Type Name="Servicio">
+      <Column Name="IdServicio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdConductor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DireccionOrigen" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DireccionDestino" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tarifa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Cliente_Servicio" Member="Cliente" ThisKey="IdCliente" OtherKey="IdCliente" Type="Cliente" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Conductor_Servicio" Member="Conductor" ThisKey="IdConductor" OtherKey="IdConductor" Type="Conductor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Usuario_Servicio" Member="Usuario" ThisKey="IdUsuario" OtherKey="IdUsuario" Type="Usuario" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sucursal" Member="Sucursal">
+    <Type Name="Sucursal">
+      <Column Name="IdSucursal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdEmpresa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_Sucursal" Member="Empresa" ThisKey="IdEmpresa" OtherKey="IdEmpresa" Type="Empresa" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ubicacion" Member="Ubicacion">
+    <Type Name="Ubicacion">
+      <Column Name="IdUbicacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdConductor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Latitud" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Longitud" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Conductor_Ubicacion" Member="Conductor" ThisKey="IdConductor" OtherKey="IdConductor" Type="Conductor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Paterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Materno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Celular" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fech_Nac" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Foto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdPerfil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Procedencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Usuario_Empresa" Member="Empresa" ThisKey="IdUsuario" OtherKey="IdUsuario" Type="Empresa" />
+      <Association Name="Usuario_Servicio" Member="Servicio" ThisKey="IdUsuario" OtherKey="IdUsuario" Type="Servicio" />
+      <Association Name="Perfil_Usuario" Member="Perfil" ThisKey="IdPerfil" OtherKey="IdPerfil" Type="Perfil" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vehiculo" Member="Vehiculo">
+    <Type Name="Vehiculo">
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDueño" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdConductor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Modelo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NroPlaca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NroChasis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SOAT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Foto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Conductor_Vehiculo" Member="Conductor" ThisKey="IdConductor" OtherKey="IdConductor" Type="Conductor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Dueño_Vehiculo" Member="Dueño" ThisKey="IdDueño" OtherKey="IdDueño" Type="Dueño" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

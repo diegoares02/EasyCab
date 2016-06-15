@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.375" name="DCEasyCabBD">
+  <DataContextMoniker Name="/DCEasyCabBDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="915560d3-d082-4f53-800c-1fb5959cde31" absoluteBounds="8.125, 0.625, 2, 1.7708968098958318">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3396e25e-113d-4e62-8c38-f942356cfa60" absoluteBounds="8.14, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a239e1c1-648d-4b69-8400-ea2f47e1d116" absoluteBounds="5.125, 3.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Conductor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dbba8946-df5a-459a-b0b4-151d9bea8f5f" absoluteBounds="5.14, 3.8350000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c35eebdc-eb60-46e0-8eb5-792e1a7bb2e6" absoluteBounds="8.375, 6.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Dueño" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8086152c-7e9b-442e-858e-a791dfd65679" absoluteBounds="8.39, 7.0850000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e124505-4b58-458f-83b9-06117073ce78" absoluteBounds="0.5, 6.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Empresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9225e4bb-12a9-47d5-b275-2554716fb651" absoluteBounds="0.51499999999999968, 6.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55885873-ab2a-485f-83ee-975bbaee443c" absoluteBounds="0.5, 0.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Perfil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b569c643-e7ab-4400-9998-7ffba09630e2" absoluteBounds="0.515, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82024b9b-4ab2-482d-90fa-eeb5836c6b5a" absoluteBounds="5.125, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Servicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="015f2bd0-e6e8-448d-b7cc-93f48edb6480" absoluteBounds="5.1400000000000006, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="643e1f3d-62bf-43aa-ac5d-f1006ce788c5" absoluteBounds="3, 6.5, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Sucursal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b9bc690-8a2f-46b5-ba5e-b711ba5995d1" absoluteBounds="3.0150000000000006, 6.9600000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f6ca20c1-59e3-48e1-aa9a-431f9a64930b" absoluteBounds="5.125, 7.375, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Ubicacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2979e74a-b98e-4c1c-8027-e89c94ad7bfb" absoluteBounds="5.1400000000000006, 7.8350000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a32e0380-d8f7-49fc-adb9-bd5ab52473b3" absoluteBounds="0.5, 2.375, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89f6b596-74e6-4446-bc07-ca73a4c4750a" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9920753-4e50-4e26-a5cb-7525f226b280" absoluteBounds="8.375, 3.375, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/DCEasyCabBDDataContext/Vehiculo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88133a6e-3353-4642-9b77-eaab8514dd61" absoluteBounds="8.39, 3.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.125 : 1.51044840494792); (7.125 : 1.51044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Cliente/Cliente_Servicio" />
+      <nodes>
+        <classShapeMoniker Id="915560d3-d082-4f53-800c-1fb5959cde31" />
+        <classShapeMoniker Id="82024b9b-4ab2-482d-90fa-eeb5836c6b5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 3.375); (6.125 : 2.84780110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Conductor/Conductor_Servicio" />
+      <nodes>
+        <classShapeMoniker Id="a239e1c1-648d-4b69-8400-ea2f47e1d116" />
+        <classShapeMoniker Id="82024b9b-4ab2-482d-90fa-eeb5836c6b5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 7.28929768880208); (3 : 7.28929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Empresa/Empresa_Sucursal" />
+      <nodes>
+        <classShapeMoniker Id="5e124505-4b58-458f-83b9-06117073ce78" />
+        <classShapeMoniker Id="643e1f3d-62bf-43aa-ac5d-f1006ce788c5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 6.68430826822917); (6.125 : 7.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Conductor/Conductor_Ubicacion" />
+      <nodes>
+        <classShapeMoniker Id="a239e1c1-648d-4b69-8400-ea2f47e1d116" />
+        <classShapeMoniker Id="f6ca20c1-59e3-48e1-aa9a-431f9a64930b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 5.87660970052083); (1.5 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Usuario/Usuario_Empresa" />
+      <nodes>
+        <classShapeMoniker Id="a32e0380-d8f7-49fc-adb9-bd5ab52473b3" />
+        <classShapeMoniker Id="5e124505-4b58-458f-83b9-06117073ce78" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.61140055338542); (5.125 : 2.61140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Usuario/Usuario_Servicio" />
+      <nodes>
+        <classShapeMoniker Id="a32e0380-d8f7-49fc-adb9-bd5ab52473b3" />
+        <classShapeMoniker Id="82024b9b-4ab2-482d-90fa-eeb5836c6b5a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 1.69399251302083); (1.5 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Perfil/Perfil_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="55885873-ab2a-485f-83ee-975bbaee443c" />
+        <classShapeMoniker Id="a32e0380-d8f7-49fc-adb9-bd5ab52473b3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.125 : 4.64505126953125); (8.375 : 4.64505126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Conductor/Conductor_Vehiculo" />
+      <nodes>
+        <classShapeMoniker Id="a239e1c1-648d-4b69-8400-ea2f47e1d116" />
+        <classShapeMoniker Id="d9920753-4e50-4e26-a5cb-7525f226b280" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.375 : 6.625); (9.375 : 5.9151025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DCEasyCabBDDataContext/Dueño/Dueño_Vehiculo" />
+      <nodes>
+        <classShapeMoniker Id="c35eebdc-eb60-46e0-8eb5-792e1a7bb2e6" />
+        <classShapeMoniker Id="d9920753-4e50-4e26-a5cb-7525f226b280" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

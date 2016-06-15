@@ -1,0 +1,39 @@
+﻿<Window x:Class="EasyCab.Modulo_Personal.Vehiculos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vehiculos" Height="343" Width="425" Loaded="Window_Loaded" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Label Content="Marca:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Modelo:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro Placa:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nro Chasis:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="SOAT:" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Conductor:" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dueño:" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="60,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" x:Name="txtMarca"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="84,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="txtChasis"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="78,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" x:Name="txtPlaca"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="69,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" x:Name="txtModelo" PreviewTextInput="txtModelo_PreviewTextInput"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="57,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" x:Name="txtSOAT"/>
+        <ComboBox HorizontalAlignment="Left" Margin="84,169,0,0" VerticalAlignment="Top" Width="120" x:Name="cmbConductor"/>
+        <ComboBox HorizontalAlignment="Left" Margin="84,200,0,0" VerticalAlignment="Top" Width="120" x:Name="cmbDueño"/>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="210,104,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgAgregar" Source="/EasyCab;component/Imagenes/Agregar-contactos-Yahoo-MSN-Messenger.png"/>
+            <Button Content="Agregar" x:Name="btnAgregar"  Click="btnAgregar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="340,39,-108,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgReporte" Source="/EasyCab;component/Imagenes/buscador.jpg"/>
+            <Button Content="Buscar" x:Name="btnBuscar"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="275,104,-43,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgModificar" Source="/EasyCab;component/Imagenes/modificar.png"/>
+            <Button Content="Modificar" x:Name="btnModificar" Click="btnModificar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="340,104,-108,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgEliminar" Source="/EasyCab;component/Imagenes/remove-male-user-29366.jpg"/>
+            <Button Content="Eliminar" x:Name="btnEliminar" Click="btnEliminar_Click"/>
+        </StackPanel>
+        <DataGrid HorizontalAlignment="Left" Margin="209,169,-115,-29" VerticalAlignment="Top" Height="129" Width="198" x:Name="dtgPropietario" />
+
+    </Grid>
+</Window>

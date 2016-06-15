@@ -1,0 +1,26 @@
+﻿<Window x:Class="EasyCab.Modulo_Seguridad.Menus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menus" Height="292.793" Width="283.987" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="76,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Name="txtNombreMenu"/>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="10,45,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40"></Image>
+            <Button Content="Agregar" Name="btnAgregar" Click="btnAgregar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="75,45,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40"/>
+            <Button Content="Modificar" Name="btnModificar" Click="btnModificar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="140,45,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40"/>
+            <Button Content="Eliminar" Name="btnEliminar" Click="btnEliminar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="205,45,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40"/>
+            <Button Content="Reporte" Name="btnReporte"/>
+        </StackPanel>
+        <DataGrid HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="255" Height="140" Name="dtgMenus" MouseDoubleClick="dtgMenus_MouseDoubleClick"/>
+    </Grid>
+</Window>

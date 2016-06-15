@@ -1,0 +1,19 @@
+﻿<Window x:Class="EasyCab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Administrador" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid x:Name="gridroot">
+        <Menu HorizontalAlignment="Left" Height="19" Margin="10,10,0,0" VerticalAlignment="Top" Width="137" x:Name="mainMenu">
+            <MenuItem Header="Empresas">
+                <MenuItem Header="Empresa" x:Name="menuEmpresa" Click="menuEmpresa_Click"></MenuItem>
+                <MenuItem Header="Propietario" x:Name="menuPropietario" Click="menuPropietario_Click"></MenuItem>
+                <MenuItem Header="Sucursal" x:Name="menuSucursal" Click="menuSucursal_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Seguridad">
+                <MenuItem Header="Administrador" x:Name="menuAdministrador" Click="menuAdministrador_Click"></MenuItem>
+                <MenuItem Header="Perfil" x:Name="menuPerfil" Click="menuPerfil_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Image HorizontalAlignment="Left" Height="277" Margin="10,34,0,0" VerticalAlignment="Top" Width="499" Source="Imagenes/easy-cab-logo.png" Stretch="Fill"/>
+    </Grid>
+</Window>

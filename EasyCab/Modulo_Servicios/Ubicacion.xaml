@@ -1,0 +1,19 @@
+﻿<Window x:Class="EasyCab.Modulo_Servicios.Ubicacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        Title="Ubicacion" Height="438.029" Width="656.668" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Conductor:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="84,14,0,0" VerticalAlignment="Top" Width="120" x:Name="cmbConductor"/>
+        <Label Content="Latitud:" HorizontalAlignment="Left" Margin="209,14,0,0" VerticalAlignment="Top"/>
+        <Label Content="Longitud:" HorizontalAlignment="Left" Margin="373,14,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="263,15,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="txtLatitud" Width="105"/>
+        <TextBlock HorizontalAlignment="Left" Margin="438,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" x:Name="txtLongitud"/>
+        <TextBlock HorizontalAlignment="Left" Margin="538,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" x:Name="txtFecha"/>
+        <Button Content="Obtener" HorizontalAlignment="Left" Margin="263,47,0,0" VerticalAlignment="Top" Width="75" x:Name="btnObtener" Click="btnObtener_Click"/>
+        <Grid HorizontalAlignment="Left" Height="325" Margin="10,72,0,0" VerticalAlignment="Top" Width="629" Background="Black">
+            <m:Map x:Name="myMap" Center="-16.5155739,-68.0915129" ZoomLevel="13" CredentialsProvider="Atgbq52CKj9Ue50DboAwn4DD9Z2EyllSfDdxhcVPZ6FojerprMrTwWlZrlT8xeSq"></m:Map>
+        </Grid>
+    </Grid>
+</Window>

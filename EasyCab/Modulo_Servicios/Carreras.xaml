@@ -1,0 +1,48 @@
+﻿<Window x:Class="EasyCab.Modulo_Servicios.Carreras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Carreras" Height="567.118" Width="1220.693" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox Header="Cliente" HorizontalAlignment="Left" Margin="12,25,0,0" VerticalAlignment="Top" Height="165" Width="218">
+            <Grid>
+                <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="71,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" x:Name="txtNombre"/>
+                <Label Content="Direccion:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="77,45,-4,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="txtDireccionOrigen"/>
+                <Label Content="Telefono:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="77,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="txtTelefono" PreviewTextInput="txtTelefono_PreviewTextInput"/>
+                <Label Content="NIT:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="77,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="txtNIT" PreviewTextInput="txtNIT_PreviewTextInput"/>
+
+            </Grid>
+        </GroupBox>
+        <ComboBox HorizontalAlignment="Left" Margin="86,195,0,0" VerticalAlignment="Top" Width="144" x:Name="cmbConductor"/>
+        <Label Content="Conductor:" HorizontalAlignment="Left" Margin="12,195,0,0" VerticalAlignment="Top"/>
+        <Label Content="Destino" HorizontalAlignment="Left" Margin="12,226,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="68,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" x:Name="txtDireccionDestino"/>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="240,77,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgAgregar" Source="/EasyCab;component/Imagenes/Agregar-contactos-Yahoo-MSN-Messenger.png"/>
+            <Button Content="Agregar" x:Name="btnAgregar" Click="btnAgregar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="240,142,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgEliminar" Source="/EasyCab;component/Imagenes/affirmative-156538_640.png"/>
+            <Button Content="Confirmar" x:Name="btnConfirmar" Click="btnEliminar_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="240,12,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgReporte" Source="/EasyCab;component/Imagenes/buscador.jpg"/>
+            <Button Content="Buscar" x:Name="btnBuscar" Click="btnBuscar_Click"/>
+        </StackPanel>
+        <Label Content="Tarifa:" HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="68,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" x:Name="txtTarifa"/>
+        <Image HorizontalAlignment="Left" Height="512" Margin="305,10,0,0" VerticalAlignment="Top" Width="451" x:Name="imgTarifario" Source="/EasyCab;component/Imagenes/Mapa Tarifario.png" Stretch="Fill"/>
+        <DataGrid HorizontalAlignment="Left" Margin="761,10,0,0" VerticalAlignment="Top" Height="512" Width="442" x:Name="dtgCarreras"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="txtId"/>
+        <TextBlock HorizontalAlignment="Left" Margin="240,506,0,0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="txtTotal"/>
+        <Label Content="Total:" HorizontalAlignment="Left" Margin="197,504,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="202" Margin="10,288,0,0" VerticalAlignment="Top" Width="279" x:Name="imgTarifas" Source="/EasyCab;component/Imagenes/Tarifario.jpg" Stretch="Fill"/>
+        <StackPanel HorizontalAlignment="Left" Height="60" Margin="240,207,0,0" VerticalAlignment="Top" Width="60">
+            <Image Height="40" Width="40" x:Name="imgEliminar1" Source="/EasyCab;component/Imagenes/Reporte I.png"/>
+            <Button Content="Reporte" x:Name="btnReporte" Click="btnReporte_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
